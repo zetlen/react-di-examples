@@ -7,12 +7,12 @@ export const Bird = () => <em>🕊</em>;
 export const Cookie = ({ blue }) =>
   blue ? <em style={{ filter: 'hue-rotate(160deg)' }}>🍪</em> : <em>🍪</em>;
 
-const Reverse = (Comp) => (props) => (
+const Reverse = (Original) => (props) => (
   <div style={{
     display: 'inline-block',
     transform: 'scaleX(-1)'
   }}>
-    <Comp {...props} />
+    <Original {...props} />
   </div>
 );
 
